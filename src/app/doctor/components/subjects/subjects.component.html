@@ -1,0 +1,14 @@
+<div class="subjectBox">
+    <div class="row">
+        <div class="col-md-3 col-sm-12"  *ngFor="let subject of subjects ; let i = index">
+            <div class="namesubject">
+                <div>{{subject.name}}</div>
+            </div>
+            <div class="subBtn">
+             <button  *ngIf="userInfo?.role=='doctor'"   class="mx-1 btn btn-danger" (click)="delete(i)">Delete</button>
+             <button *ngIf="userInfo?.role=='doctor'"   class="mx-1 btn btn-primary">Show</button>
+             <button *ngIf="userInfo?.role=='students'"   class="mx-1 btn btn-success">Start Exam</button>
+            </div>
+        </div>
+    </div>
+</div>

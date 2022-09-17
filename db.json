@@ -1,0 +1,38 @@
+{
+  "students": [
+    {
+      "username": "kariem",
+      "email": "kariem@gmail.com",
+      "password": "123",
+      "id": 1
+    },
+    {
+      "username": "hanan",
+      "email": "hanan@gmail.com",
+      "password": "123",
+      "id": 2
+    },
+    {
+      "username": "hassan",
+      "email": "hassan@gmail.com",
+      "password": "123",
+      "id": 3
+    }
+  ],
+  "doctor": [
+    {
+      "username": "admin",
+      "email": "admin@gmail.com",
+      "password": "123",
+      "id": 1
+    }
+  ],
+  "login": [
+    {
+      "username": "admin",
+      "role": "doctor",
+      "id": 1
+    }
+  ],
+  "subjects": []
+}
