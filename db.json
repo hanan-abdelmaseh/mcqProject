@@ -10,6 +10,13 @@
       "username": "hanan",
       "email": "hanan@gmail.com",
       "password": "123",
+      "subjects": [
+        {
+          "name": "Math",
+          "id": "1",
+          "degree": 2
+        }
+      ],
       "id": 2
     },
     {
@@ -31,6 +38,7 @@
     {
       "username": "hanan",
       "role": "students",
+      "userId": 2,
       "id": 1
     }
   ],

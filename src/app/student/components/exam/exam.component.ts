@@ -12,6 +12,8 @@ import { DoctorService } from 'src/app/doctor/services/doctor.service';
 export class ExamComponent implements OnInit {
 id:any ;
 userInfo :any ;
+studentInfo:any ;
+studentSubjects :any =[] ;
 mainSubject :any =[] ;
 total :number = 0 ;
 show:boolean = false ;
@@ -34,7 +36,15 @@ show:boolean = false ;
   getUserInfo(){
     this._authService.getCurentuser().subscribe((res:any)=>{
        this.userInfo =res ;
+       this.getUserData();
     });  
+  }
+  getUserData() {
+    this._authService.getStudent(this.userInfo.userId).subscribe((res :any)=>{
+ this.studentInfo = res 
+ console.log(this.studentInfo);
+ this.studentSubjects = res?.subjects ? res?.subjects : [] ;
+    })
   }
   delete(index:number){
     //we remove question from view then we create another model with new data 
@@ -65,6 +75,21 @@ this._doctorService.updateSubject(this.id, model).subscribe((res)=>{
       }
     }
     this.show = true;
+     this.studentSubjects.push({
+      name:this.mainSubject.name ,
+      id:this.id ,
+      degree :this.total
+     })
+    const model ={
+      username : this.studentInfo.username ,
+      email : this.studentInfo.email ,
+      password:this.studentInfo.password,
+      subjects:this.studentSubjects
+
+    }
+    this._authService.updateStudent(this.userInfo.userId , model).subscribe((res:any)=>{
+
+    })
 
   }
 }

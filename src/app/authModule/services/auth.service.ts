@@ -20,6 +20,12 @@ user = new Subject();
     return this._httpClient.put(`${environment.baseApi}login/1`,model);
 
   }
+getStudent(id :number){
+  return this._httpClient.get(`${environment.baseApi}students/${id}`);
+}  
+updateStudent(id:number  , model:any){
+  return this._httpClient.put(`${environment.baseApi}students/${id}` , model);
+}
   getCurentuser(){
     return this._httpClient.get(`${environment.baseApi}login/1`);
   }
