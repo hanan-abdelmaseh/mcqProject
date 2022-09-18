@@ -58,7 +58,8 @@ export class LoginComponent implements OnInit {
               else{
                 const model= {
                   username : this.users[index].username ,
-                  role:this.type
+                  role:this.type ,
+                  userId : this.users[index].id
                 }
                 this._authService.login(model).subscribe((res)=>{
                   this._authService.user.next(res);
