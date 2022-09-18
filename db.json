@@ -29,6 +29,8 @@
   ],
   "login": [
     {
+      "username": "hanan",
+      "role": "students",
       "id": 1
     }
   ],
