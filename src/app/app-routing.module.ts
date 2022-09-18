@@ -10,7 +10,6 @@ import { ExamComponent } from './student/components/exam/exam.component';
 const routes: Routes = [
   {path:'login' , component:LoginComponent},
   {path:'register' , component:RegisterComponent},
-  
   {path:'exam/:id' , component:ExamComponent},
   {path:'students' , component:StudentsComponent},
   {path:'subjects' , component:SubjectsComponent},

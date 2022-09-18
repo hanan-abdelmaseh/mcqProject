@@ -17,6 +17,9 @@ export class DoctorService {
   getsubjects(){
     return this._httpClient.get(`${environment.baseApi}subjects`);
   }
+  getSubject(id:number){
+    return this._httpClient.get(`${environment.baseApi}subjects/${id}`);
+  }
   deleteSubject(id:number){
     return this._httpClient.delete(`${environment.baseApi}subjects/${id}`)
   }

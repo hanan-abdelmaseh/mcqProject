@@ -73,7 +73,7 @@
             <div class="examBox">
                 <div class="examhead text-center"><h2> {{SubjectName}} Exam</h2></div>
                 <div class="quizBox"  *ngFor="let question of questions ; let i = index">
-                    <strong><span class="text-danger">Question 1</span>{{question.question}}  </strong>
+                    <strong><span class="text-danger">Question {{i+1}}</span> {{question.question}}  </strong>
                     <div class="row" dir="rtl">
                         <div class="col-sm-12">
                             A. {{question.answer1}}

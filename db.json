@@ -29,10 +29,61 @@
   ],
   "login": [
     {
-      "username": "admin",
-      "role": "doctor",
       "id": 1
     }
   ],
-  "subjects": []
+  "subjects": [
+    {
+      "name": "Math",
+      "questions": [
+        {
+          "question": "2*2",
+          "answer1": "4",
+          "answer2": "10",
+          "answer3": "8",
+          "answer4": "11",
+          "correctAnswer": "4"
+        },
+        {
+          "question": "5*5",
+          "answer1": "10",
+          "answer2": "13",
+          "answer3": "25",
+          "answer4": "12",
+          "correctAnswer": "25"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "arabic",
+      "questions": [
+        {
+          "question": "aa",
+          "answer1": "aa",
+          "answer2": "cc",
+          "answer3": "nn",
+          "answer4": "rr",
+          "correctAnswer": "aa"
+        },
+        {
+          "question": "bcd",
+          "answer1": "e",
+          "answer2": "g",
+          "answer3": "f",
+          "answer4": "h",
+          "correctAnswer": "e"
+        },
+        {
+          "question": "klm",
+          "answer1": "b",
+          "answer2": "o",
+          "answer3": "m",
+          "answer4": "n",
+          "correctAnswer": "n"
+        }
+      ],
+      "id": 2
+    }
+  ]
 }

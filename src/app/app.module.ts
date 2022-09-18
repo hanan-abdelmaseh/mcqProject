@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './authModule/auth.module';
 import { DoctorModule } from './doctor/doctor.module';
+import { StudentModule } from './student/student.module';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { DoctorModule } from './doctor/doctor.module';
     BrowserAnimationsModule,
     SharedModule,
     AuthModule,
-    DoctorModule
+    DoctorModule,
+    StudentModule
   ],
   providers: [],
   bootstrap: [AppComponent]
