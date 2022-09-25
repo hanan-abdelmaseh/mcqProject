@@ -4,13 +4,13 @@
     margin: 0;
     border-radius: 0;
     border: 0;
-    z-index: 999;
+   
 }
     .navbar.welcome {
         background-color: transparent!important;
         position: fixed;
     }
-    .nav a {
+     a {
         color: #fff;
         font-size: 18px;
         font-weight: 500;

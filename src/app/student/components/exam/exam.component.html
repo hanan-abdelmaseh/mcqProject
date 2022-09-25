@@ -4,22 +4,26 @@
         <strong ><span class="text-danger"></span> {{subject.question}}  </strong>
         <div class="row mt-3" >
             <div class="col-md-6 col-sm-12">
-                <mat-radio-button  *ngIf="userInfo?.role =='students' && !show"(change)="getCorrectAnswer($event)" name="{{i}}" value="{{subject.answer1}}" color="warn"></mat-radio-button>
+                <mat-radio-button  *ngIf="userInfo?.role =='students' && !show && validExam"(change)="getCorrectAnswer($event)" name="{{i}}" value="{{subject.answer1}}" color="warn"></mat-radio-button>
                 <label>A. {{subject.answer1}}</label>
             </div>
 
             <div class="col-md-6 col-sm-12">
-                <mat-radio-button *ngIf="userInfo?.role =='students'&& !show"(change)="getCorrectAnswer($event)"name="{{i}}" value="{{subject.answer2}}" color="warn"></mat-radio-button>
+                <mat-radio-button *ngIf="userInfo?.role =='students'&& !show && validExam"(change)="getCorrectAnswer($event)"name="{{i}}" value="{{subject.answer2}}" color="warn"></mat-radio-button>
                 <label>B. {{subject.answer2}} </label>
             </div>
 
             <div class="col-md-6 col-sm-12">
-                <mat-radio-button *ngIf="userInfo?.role =='students'&& !show"(change)="getCorrectAnswer($event)"name="{{i}}" value="{{subject.answer3}}" color="warn"></mat-radio-button>
+                <mat-radio-button *ngIf="userInfo?.role =='students'&& 
+                !show && validExam"(change)="getCorrectAnswer($event)"name="{{i}}" 
+                value="{{subject.answer3}}" color="warn"></mat-radio-button>
                 <label>C. {{subject.answer3}} </label>
             </div>
 
             <div class="col-md-6 col-sm-12">
-                <mat-radio-button *ngIf="userInfo?.role =='students'&& !show"(change)="getCorrectAnswer($event)"name="{{i}}" value="{{subject.answer4}}" color="warn"></mat-radio-button>
+                <mat-radio-button *ngIf="userInfo?.role =='students'&& !show && validExam" 
+                (change)="getCorrectAnswer($event)"name="{{i}}" 
+                value="{{subject.answer4}}" color="warn"></mat-radio-button>
                 <label>D. {{subject.answer4}}</label>
             </div>
         </div>
@@ -29,8 +33,8 @@
         <hr>
     </div>
     <div class="text-center" *ngIf="userInfo?.role =='students'">
-        <span  *ngIf="show" class="fs-4 text-success">{{total}}/ {{mainSubject.questions.length}}  </span>
-        <button *ngIf="!show" class="btn btn-success px-5 fs-5" (click)="getResult()" > result</button>
+        <span  *ngIf="show || !validExam" class="fs-4 text-success">{{total}}/ {{mainSubject.questions.length}}  </span>
+        <button *ngIf="!show && validExam" class="btn btn-success px-5 fs-5" (click)="getResult()" > result</button>
     </div>
 
 </div>
