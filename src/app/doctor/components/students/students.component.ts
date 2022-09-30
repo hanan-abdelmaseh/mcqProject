@@ -6,8 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./students.component.css']
 })
 export class StudentsComponent implements OnInit {
-
-  constructor() { }
+  displayedColumns :any ;
+  dataSource :any ;
+  datatable:any
+  constructor() {
+    this.displayedColumns =["position", "name" ,"subjectName" , "degree"];
+    
+   }
 
   ngOnInit(): void {
   }

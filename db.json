@@ -10,13 +10,7 @@
       "username": "hanan",
       "email": "hanan@gmail.com",
       "password": "123",
-      "subjects": [
-        {
-          "name": "Math",
-          "id": "1",
-          "degree": 2
-        }
-      ],
+      "subjects": [],
       "id": 2
     },
     {
@@ -36,61 +30,53 @@
   ],
   "login": [
     {
-      "username": "hanan",
-      "role": "students",
-      "userId": 2,
+      "username": "admin",
+      "role": "doctor",
+      "userId": 1,
       "id": 1
     }
   ],
   "subjects": [
     {
-      "name": "Math",
+      "name": "HTML",
       "questions": [
         {
-          "question": "2*2",
-          "answer1": "4",
-          "answer2": "10",
-          "answer3": "8",
-          "answer4": "11",
-          "correctAnswer": "4"
+          "question": "HTML stands for ",
+          "answer1": "Hyper text Markup Language",
+          "answer2": "Json object",
+          "answer3": "Hyper Transfer Language ",
+          "answer4": "i don't know ",
+          "correctAnswer": "Hyper text Markup Language"
         },
         {
-          "question": "5*5",
-          "answer1": "10",
-          "answer2": "13",
-          "answer3": "25",
-          "answer4": "12",
-          "correctAnswer": "25"
+          "question": "How to add img to your page ",
+          "answer1": "Using image Tag <image>",
+          "answer2": "Using  <im> tag ",
+          "answer3": "Can't add Image ",
+          "answer4": "Using <img />",
+          "correctAnswer": "Using <img />"
+        },
+        {
+          "question": "Div is ",
+          "answer1": "Block level Element",
+          "answer2": "Not Element",
+          "answer3": "Inline level Element",
+          "answer4": "i have no idea ",
+          "correctAnswer": "Block level Element"
         }
       ],
       "id": 1
     },
     {
-      "name": "arabic",
+      "name": "Css",
       "questions": [
         {
-          "question": "aa",
-          "answer1": "aa",
-          "answer2": "cc",
-          "answer3": "nn",
-          "answer4": "rr",
-          "correctAnswer": "aa"
-        },
-        {
-          "question": "bcd",
-          "answer1": "e",
-          "answer2": "g",
-          "answer3": "f",
-          "answer4": "h",
-          "correctAnswer": "e"
-        },
-        {
-          "question": "klm",
-          "answer1": "b",
-          "answer2": "o",
-          "answer3": "m",
-          "answer4": "n",
-          "correctAnswer": "n"
+          "question": "Css stands For ",
+          "answer1": "Cascading Style sheet ",
+          "answer2": "Class ",
+          "answer3": "i have no idea",
+          "answer4": "common page",
+          "correctAnswer": "Cascading Style sheet "
         }
       ],
       "id": 2

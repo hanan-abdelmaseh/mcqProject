@@ -14,7 +14,7 @@
 .register .registhead h2 {
     display: inline-block;
     padding: 5px 88px;
-    background-color: #f44336;
+    background-color: #9633FF;
     border-radius: 30px;
     font-size: 28px;
     /* margin-top: 0px; */
@@ -45,7 +45,12 @@ mat-radio-button {
 a {
     text-decoration: none;
 }
-
+.createAccountBtn{
+    
+        background-color: #E3CCF8;
+        border-radius: 0.9rem;
+    
+}
 .alert-danger {
     background-color: #f44336c4;
     color: #FFF;

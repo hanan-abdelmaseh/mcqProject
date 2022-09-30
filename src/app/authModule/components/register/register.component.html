@@ -37,7 +37,7 @@
         </div>
       <div class="registfoot text-right">
           <a routerLink="/login" color="primary">Already have account ?</a>
-            <button mat-raised-button color="warn"  [disabled]="userForm.invalid || userForm.value.password != userForm.value.confirmPassword" (click)="submit()"> Create Account</button>
+            <button mat-raised-button class="btn createAccountBtn"  [disabled]="userForm.invalid || userForm.value.password != userForm.value.confirmPassword" (click)="submit()"> Create Account</button>
       </div>
      </form>
 </div>
