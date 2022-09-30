@@ -4,19 +4,54 @@
       "username": "kariem",
       "email": "kariem@gmail.com",
       "password": "123",
+      "subjects": [
+        {
+          "name": "HTML",
+          "id": "1",
+          "degree": 3
+        },
+        {
+          "name": "Css",
+          "id": "2",
+          "degree": 1
+        }
+      ],
       "id": 1
     },
     {
       "username": "hanan",
       "email": "hanan@gmail.com",
       "password": "123",
-      "subjects": [],
+      "subjects": [
+        {
+          "name": "HTML",
+          "id": "1",
+          "degree": 2
+        },
+        {
+          "name": "Css",
+          "id": "2",
+          "degree": 1
+        }
+      ],
       "id": 2
     },
     {
       "username": "hassan",
       "email": "hassan@gmail.com",
       "password": "123",
+      "subjects": [
+        {
+          "name": "HTML",
+          "id": "1",
+          "degree": 3
+        },
+        {
+          "name": "Css",
+          "id": "2",
+          "degree": 1
+        }
+      ],
       "id": 3
     }
   ],
